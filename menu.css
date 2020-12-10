@@ -87,6 +87,8 @@
 
 }
 
+
+
 /*  show menu Click event*/
 .menu-wrap .toggler:checked ~ .menu{  /* google ~ how it works*/
 	visibility: visible;
@@ -95,6 +97,10 @@
 	transform: scale(1);
 	transition-duration: var(--menu-speed);
 
+}
+.menu-wrap .toggler:checked ~ .menu > div > div{
+	opacity: 1;
+	transition: opacity 0.4s ease 0.4s;
 }
 
 
@@ -121,6 +127,7 @@
 	width: 200vw;
 	height: 200vw;
 	display: flex;
+	flex: none;
 	align-items: center;
 	justify-content: center;
 	transform: scale(0);/* this was commented out*/
